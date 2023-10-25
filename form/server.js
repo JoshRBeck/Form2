@@ -5,12 +5,11 @@ const app = express();
 const port = 5173;
 
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: 'https://localhost:3000'
 };
 
 app.use(cors(corsOptions));
 app.use(json());
-
 
 const mailUser = process.env.REACT_APP_MAIL_USER;
 const mailPass = process.env.REACT_APP_MAIL_PASS;
